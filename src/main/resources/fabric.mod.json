@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "surrealconnect",
+  "version": "${version}",
+  "name": "SurrealConnect",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Gjorg/SurrealConnect"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/surrealconnect/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "eu.hexasis.surrealconnect.client.SurrealConnectClient"
+    ],
+    "main": [
+      "eu.hexasis.surrealconnect.SurrealConnect"
+    ]
+  },
+  "mixins": [
+    "surrealconnect.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
